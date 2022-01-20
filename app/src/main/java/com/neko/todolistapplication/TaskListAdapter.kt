@@ -10,7 +10,12 @@ import androidx.recyclerview.widget.RecyclerView
  * A connection between the actual data and the display of the said list. "Driver of a data->display"
  */
 
-class TaskListAdapter (private val listOfItems: List<String>) : RecyclerView.Adapter<TaskListAdapter.ViewHolder>(){
+class TaskListAdapter (private val listOfItems: List<String>, val longClickListener: OnLongClickListener) : RecyclerView.Adapter<TaskListAdapter.ViewHolder>(){
+
+
+    interface OnLongClickListener {
+        fun onItemLongClicked(position: Int)
+    }
 
 
 
@@ -44,6 +49,14 @@ class TaskListAdapter (private val listOfItems: List<String>) : RecyclerView.Ada
 
         init{
             textView = itemView.findViewById(android.R.id.text1)
+
+
+            itemView.setOnLongClickListener{
+                longClickListener.onItemLongClicked(adapterPosition)
+                true
+            }
+
+
         }
     }
 
