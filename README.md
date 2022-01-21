@@ -18,25 +18,30 @@ The following **optional** features are implemented:
 
 * [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
 
-The following **additional** features are implemented:
-
-* [ ] List anything else that you can get done to improve the app functionality!
-
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Viewing and adding the items:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='additem.gif' title='Adding Item Video' width='' alt='Adding Item' />
+
+Viewing and removing the items:
+
+<img src='removeitem.gif' title='Removing Item Video' width='' alt='Removing Item' />
+
+Item is persisting even after the removal of application and relaunch:
+
+<img src='persistantfile.gif' title='File Persistant' width='' alt='List Persists' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The Challenge That I had for this section was to find a time to squeeze in the prework.
+Mostly was related to me having a different setup, that had few clashing things related to java versions.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2022] [Jonghyun Choi]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
